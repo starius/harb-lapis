@@ -1,0 +1,14 @@
+digraph {
+    rankdir=LR;
+    WebClient [style=rounded, label="Web-клиент"];
+    Nginx [fillcolor=yellow, style=filled, shape=box, label="Nginx"];
+    NginxLua [fillcolor=yellow, style=filled, shape=box, label="Nginx 2 + Lua"];
+    DB [fillcolor=yellow, fontcolor=red, style=filled, shape=box,
+        label="База данных"];
+    API [fontcolor=red, shape=box, label="Удалённое HTTP-API"];
+    WebClient -> Nginx;
+    Nginx -> NginxLua;
+    NginxLua -> DB;
+    NginxLua -> API;
+}
+
