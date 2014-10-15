@@ -1,0 +1,9 @@
+digraph {
+    rankdir=LR;
+    WebClient [style=rounded, label="Web-клиент"];
+    Apache [fillcolor=yellow, style=filled, shape=box];
+    PHP [fillcolor=yellow, style=filled, shape=box];
+    WebClient -> Apache [color=red];
+    Apache -> PHP;
+}
+
