@@ -13,7 +13,6 @@ end)
 
 app:post("/geturl", function(self)
   local url = self.req.params_post.url
-  print(url)
   local body, status_code, headers = http.simple(url)
   return body
 end)
