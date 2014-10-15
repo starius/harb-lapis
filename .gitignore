@@ -1,1 +1,4 @@
 *.png
+
+*.compiled
+logs
