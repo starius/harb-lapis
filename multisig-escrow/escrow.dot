@@ -8,21 +8,21 @@ digraph G {
     subgraph cluster_inputs {
         style = filled;
         color = green;
-        alice_input [label="Alice's wallet"];
-        bob_input [label="Bob's wallet"];
+        alice_input [label="Кошелёк Алисы"];
+        bob_input [label="Кошелёк Боба"];
     }
 
     subgraph cluster_multisig {
         style = filled;
         color = red;
-        multisig_address [label="Multi Sig Address 2/2 (deposit)"];
+        multisig_address [label="Адрес multisig 2/2 (залог)"];
     }
 
     subgraph cluster_outputs {
         style = filled;
         color = green;
-        alice_output [label="Alice's wallet"];
-        bob_output [label="Bob's wallet"];
+        alice_output [label="Кошелёк Алисы"];
+        bob_output [label="Кошелёк Боба"];
     }
 
     node[shape=none, width=0, height=0, label=""];
