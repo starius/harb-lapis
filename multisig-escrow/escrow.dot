@@ -15,7 +15,7 @@ digraph G {
     subgraph cluster_multisig {
         style = filled;
         color = red;
-        multisig_address [label="Multi Sig Address"];
+        multisig_address [label="Multi Sig Address (deposit)"];
     }
 
     subgraph cluster_outputs {
