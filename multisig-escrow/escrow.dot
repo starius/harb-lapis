@@ -30,9 +30,9 @@ digraph G {
     alice_input -> dummy_input;
     bob_input -> dummy_input;
     edge[dir=forward];
-    dummy_input -> multisig_address;
+    dummy_input -> multisig_address [label="Транзакция 1"];
     edge[dir=none];
-    multisig_address -> dummy_output;
+    multisig_address -> dummy_output [label="Транзакция 2"];
     edge[dir=forward];
     dummy_output -> alice_output;
     dummy_output -> bob_output;
